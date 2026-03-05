@@ -79,7 +79,7 @@ Native macOS menu bar app that syncs music to Rockbox iPods. Detects connected i
 ## Requirements
 
 - **Xcode** (not installed yet — download from Mac App Store, ~10 GB)
-- macOS 13 Ventura or later
+- macOS 14 Sonoma or later
 - `xcodegen` (`brew install xcodegen`) — regenerate `.xcodeproj` after editing `project.yml`
 
 ## Commands
@@ -148,7 +148,7 @@ Framework: XCTest (18 tests across 4 files)
 
 ## Minimum Target
 
-macOS 13 Ventura (MenuBarExtra requires 13+)
+macOS 14 Sonoma (@Observable requires 14+)
 
 ## Key Design Decisions
 
