@@ -96,42 +96,55 @@ xcodegen generate           # regenerate xcodeproj after changing project.yml
 
 ```
 PodpalSync/
-  App/
-    PodpalSyncApp.swift      # @main, menu bar setup
-    AppDelegate.swift        # NSStatusItem, popover
-  Features/
-    iPodDetection/
-      iPodMonitor.swift      # DiskArbitration / NSWorkspace mount notifications
-      iPodIdentifier.swift   # read serial number from mounted volume
-    Profiles/
-      Profile.swift          # iPod profile model (name, serial, sync rules)
-      ProfileStore.swift     # persist profiles to UserDefaults/JSON
-    Sync/
-      SyncEngine.swift       # delta sync: compare, copy, delete
-      AlbumArtExtractor.swift # extract embedded art → cover.jpg
-    Sequoia/
-      MountHelper.swift      # detect unmounted iPod, guide/attempt fix
-    UI/
-      MenuBarView.swift      # SwiftUI popover content
-      ProfileEditorView.swift # add/edit iPod profiles and sync rules
-      SyncProgressView.swift  # live sync progress
-  Tests/
-    SyncEngineTests.swift
-    AlbumArtExtractorTests.swift
-    ProfileStoreTests.swift
-    iPodIdentifierTests.swift
+  PodpalSyncApp.swift          # @main, MenuBarExtra setup
+  Models/
+    IPodProfile.swift          # Struct: serial, name, sync rules, art flag
+    SyncRule.swift             # Struct: source path → destination path
+    SyncResult.swift           # Struct: stats (added/removed/skipped/errors)
+  Storage/
+    ProfileStore.swift         # @Observable: UserDefaults/JSON persistence
+  Services/
+    IPodDetector.swift         # @Observable @MainActor: NSWorkspace mount detection
+    SyncEngine.swift           # actor: delta sync (copy/skip/delete audio files)
+    ArtExtractor.swift         # actor: extract embedded art → cover.jpg
+    SyncCoordinator.swift      # @Observable @MainActor: orchestrates full sync
+  Views/
+    MenuBarView.swift          # Menu bar popover, iPod list, status
+    ProfileListView.swift      # Sheet: manage iPod profiles
+    ProfileEditView.swift      # Sheet: edit profile + sync rules
+    SyncRuleRowView.swift      # Row: folder-picker for a single sync rule
+    SyncStatusView.swift       # Idle/syncing/done/failed display
+PodpalSyncTests/               # XCTest — 18 tests total
+  ProfileStoreTests.swift      # 6 tests: CRUD, lookup, persistence
+  SyncEngineTests.swift        # 5 tests: copy, skip, remove, exclude, subdirs
+  IPodDetectorTests.swift      # 5 tests: Rockbox detection, serial reading
+  ArtExtractorTests.swift      # 3 tests: empty dir, existing cover, non-audio
 ```
 
 ## Tech Stack
 
 - **Swift 5.9+ / SwiftUI** — UI and app logic
 - **MenuBarExtra** (macOS 13+) — menu bar presence
-- **DiskArbitration** — low-level disk mount/unmount callbacks
-- **NSWorkspace** — volume mount notifications (fallback)
+- **NSWorkspace** — volume mount/unmount notifications
 - **AVFoundation / ImageIO** — read embedded album art from audio files
 - **FileManager** — file copy, delta comparison
 - **UserDefaults + JSONEncoder** — profile persistence
 - **XCTest** — unit tests
+
+## Code Style
+
+- **Actors** for I/O services: `SyncEngine`, `ArtExtractor`
+- **@Observable @MainActor classes** for UI state: `IPodDetector`, `SyncCoordinator`
+- **@Observable class** (no MainActor) for data layer: `ProfileStore`
+- **All models are structs** — `Identifiable, Codable, Equatable`
+- Concurrency: `Task { await … }` from MainActor to call actor methods
+
+## Testing
+
+Framework: XCTest (18 tests across 4 files)
+- Run all: `Cmd+U` in Xcode
+- Test target: `PodpalSyncTests`
+- Tests use temp directories (no real iPod needed) and unique UserDefaults suites per test
 
 ## Minimum Target
 
