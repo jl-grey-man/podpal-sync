@@ -2,8 +2,9 @@
 
 ## Current Phase: Phase 2 — Polish
 
-### Next Up
-- [ ] Build and test in Xcode (open PodpalSync.xcodeproj, Cmd+U to run tests)
+### Next Up (tomorrow)
+- [ ] Install Xcode from Mac App Store (~10 GB)
+- [ ] Build and test in Xcode (`open PodpalSync.xcodeproj`, then Cmd+U to run tests)
 - [ ] Test on real iPod hardware
 
 ### Done — Phase 1

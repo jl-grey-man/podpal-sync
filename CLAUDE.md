@@ -76,6 +76,12 @@ Native macOS menu bar app that syncs music to Rockbox iPods. Detects connected i
 
 **Implementation plan:** `docs/plans/2026-03-05-podpal-sync-mvp.md`
 
+## Requirements
+
+- **Xcode** (not installed yet — download from Mac App Store, ~10 GB)
+- macOS 13 Ventura or later
+- `xcodegen` (`brew install xcodegen`) — regenerate `.xcodeproj` after editing `project.yml`
+
 ## Commands
 
 ```bash
@@ -83,6 +89,7 @@ open PodpalSync.xcodeproj   # open in Xcode
 cmd+B                       # build
 cmd+U                       # run tests
 cmd+R                       # run app
+xcodegen generate           # regenerate xcodeproj after changing project.yml
 ```
 
 ## Architecture
