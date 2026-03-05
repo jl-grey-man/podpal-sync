@@ -1,0 +1,486 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		036705BB969CAE38A87420A0 /* ArtExtractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81519F8D533148EFB7477A9B /* ArtExtractor.swift */; };
+		1AA64ECAAF7580C158DE6BC3 /* IPodDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2EBF81F7B9D2B32EE011978 /* IPodDetector.swift */; };
+		31943776226D640246CF426A /* SyncStatusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C558CB9AAAC28DE7D82ACD41 /* SyncStatusView.swift */; };
+		328FC6B89BBBD29CD6DE314A /* SyncRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = A231EDC2D61D13EC1DA96748 /* SyncRule.swift */; };
+		4CE88A0913EF015EE8645721 /* SyncCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F2FDC87B65601F5FD4F09BA /* SyncCoordinator.swift */; };
+		54D4957D470A2A314C9E0452 /* PodpalSyncApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5CF15666CBB223C4ADE6BAB /* PodpalSyncApp.swift */; };
+		5FDAB8966647AA426F57F6D7 /* ArtExtractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 910306EDF47219160BB26468 /* ArtExtractorTests.swift */; };
+		649A4BFAFD147869BEDADFB7 /* SyncEngineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90953A91E20B30CD28F9D20D /* SyncEngineTests.swift */; };
+		6770A2359BB986EE69D1D78D /* IPodDetectorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26D5F3220CABACBB8BF352E /* IPodDetectorTests.swift */; };
+		78856E288D7326085E21FA88 /* ProfileEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20D0161E4AA01B3A6BC365AD /* ProfileEditView.swift */; };
+		80793487F4DF21580ECECA8A /* MenuBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B82B47AB3B70F16E2F1A9980 /* MenuBarView.swift */; };
+		A19699B741C5FE64C42C8A5A /* ProfileStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757A94E5878407D97F664DBA /* ProfileStore.swift */; };
+		A4D0727B7E6DAD804A609DB6 /* SyncEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C71C18C8BC5D5FC7C12DD6 /* SyncEngine.swift */; };
+		A999AA2790F5A9C841CB2589 /* SyncRuleRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F502CEB124BE3CECFB860C5 /* SyncRuleRowView.swift */; };
+		AE20845E99E3D0C174C56735 /* SyncResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5422F118C8B1DA666B147015 /* SyncResult.swift */; };
+		B135E1535B264572702FF995 /* IPodProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD56066063B1299E8D50EF89 /* IPodProfile.swift */; };
+		B1C2BBEB59E842E181220D32 /* ProfileStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F5D70243D79907D16F5BBD0 /* ProfileStoreTests.swift */; };
+		D74D9A85779A2E074874FA93 /* ProfileListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5B8243BD2E24BBA2EB50AC /* ProfileListView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4F2F6E9BA9FB11E218C3DC9E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E64515BB56DF9727D61C0A7C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1372831291B47DC29F3601FB;
+			remoteInfo = PodpalSync;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0F502CEB124BE3CECFB860C5 /* SyncRuleRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SyncRuleRowView.swift; sourceTree = "<group>"; };
+		0F5D70243D79907D16F5BBD0 /* ProfileStoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileStoreTests.swift; sourceTree = "<group>"; };
+		141365FD7216EF02FA626A10 /* PodpalSync.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PodpalSync.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		20D0161E4AA01B3A6BC365AD /* ProfileEditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileEditView.swift; sourceTree = "<group>"; };
+		5422F118C8B1DA666B147015 /* SyncResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SyncResult.swift; sourceTree = "<group>"; };
+		66C49C5E5F591FA45C46A3FB /* PodpalSync.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PodpalSync.entitlements; sourceTree = "<group>"; };
+		6F2FDC87B65601F5FD4F09BA /* SyncCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SyncCoordinator.swift; sourceTree = "<group>"; };
+		757A94E5878407D97F664DBA /* ProfileStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileStore.swift; sourceTree = "<group>"; };
+		81519F8D533148EFB7477A9B /* ArtExtractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtExtractor.swift; sourceTree = "<group>"; };
+		90953A91E20B30CD28F9D20D /* SyncEngineTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SyncEngineTests.swift; sourceTree = "<group>"; };
+		910306EDF47219160BB26468 /* ArtExtractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtExtractorTests.swift; sourceTree = "<group>"; };
+		A231EDC2D61D13EC1DA96748 /* SyncRule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SyncRule.swift; sourceTree = "<group>"; };
+		A2C71C18C8BC5D5FC7C12DD6 /* SyncEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SyncEngine.swift; sourceTree = "<group>"; };
+		AD56066063B1299E8D50EF89 /* IPodProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IPodProfile.swift; sourceTree = "<group>"; };
+		B5CF15666CBB223C4ADE6BAB /* PodpalSyncApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodpalSyncApp.swift; sourceTree = "<group>"; };
+		B82B47AB3B70F16E2F1A9980 /* MenuBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBarView.swift; sourceTree = "<group>"; };
+		B83E68C02363C79227E01B32 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		C558CB9AAAC28DE7D82ACD41 /* SyncStatusView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SyncStatusView.swift; sourceTree = "<group>"; };
+		E2EBF81F7B9D2B32EE011978 /* IPodDetector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IPodDetector.swift; sourceTree = "<group>"; };
+		EF354DEFC3EE881150ABF536 /* PodpalSyncTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PodpalSyncTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F26D5F3220CABACBB8BF352E /* IPodDetectorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IPodDetectorTests.swift; sourceTree = "<group>"; };
+		FF5B8243BD2E24BBA2EB50AC /* ProfileListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileListView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		124D2CD2E6EE88FD49F45C0A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				141365FD7216EF02FA626A10 /* PodpalSync.app */,
+				EF354DEFC3EE881150ABF536 /* PodpalSyncTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		36F4DA7643D16044324E6FA4 /* PodpalSync */ = {
+			isa = PBXGroup;
+			children = (
+				B83E68C02363C79227E01B32 /* Info.plist */,
+				66C49C5E5F591FA45C46A3FB /* PodpalSync.entitlements */,
+				B5CF15666CBB223C4ADE6BAB /* PodpalSyncApp.swift */,
+				4AFBB355E87BB1347E081D25 /* Models */,
+				8325EE80C0BAC2CA24252630 /* Services */,
+				BC1127951D2B403BD581E4FF /* Storage */,
+				66B1ABD8426D627C0200960A /* Views */,
+			);
+			path = PodpalSync;
+			sourceTree = "<group>";
+		};
+		4AFBB355E87BB1347E081D25 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				AD56066063B1299E8D50EF89 /* IPodProfile.swift */,
+				5422F118C8B1DA666B147015 /* SyncResult.swift */,
+				A231EDC2D61D13EC1DA96748 /* SyncRule.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		5B8CDB8310DB302F75D57427 /* PodpalSyncTests */ = {
+			isa = PBXGroup;
+			children = (
+				910306EDF47219160BB26468 /* ArtExtractorTests.swift */,
+				F26D5F3220CABACBB8BF352E /* IPodDetectorTests.swift */,
+				0F5D70243D79907D16F5BBD0 /* ProfileStoreTests.swift */,
+				90953A91E20B30CD28F9D20D /* SyncEngineTests.swift */,
+			);
+			path = PodpalSyncTests;
+			sourceTree = "<group>";
+		};
+		66B1ABD8426D627C0200960A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B82B47AB3B70F16E2F1A9980 /* MenuBarView.swift */,
+				20D0161E4AA01B3A6BC365AD /* ProfileEditView.swift */,
+				FF5B8243BD2E24BBA2EB50AC /* ProfileListView.swift */,
+				0F502CEB124BE3CECFB860C5 /* SyncRuleRowView.swift */,
+				C558CB9AAAC28DE7D82ACD41 /* SyncStatusView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		8325EE80C0BAC2CA24252630 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				81519F8D533148EFB7477A9B /* ArtExtractor.swift */,
+				E2EBF81F7B9D2B32EE011978 /* IPodDetector.swift */,
+				6F2FDC87B65601F5FD4F09BA /* SyncCoordinator.swift */,
+				A2C71C18C8BC5D5FC7C12DD6 /* SyncEngine.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		8C73A89958EDFEFEE128CDA4 = {
+			isa = PBXGroup;
+			children = (
+				36F4DA7643D16044324E6FA4 /* PodpalSync */,
+				5B8CDB8310DB302F75D57427 /* PodpalSyncTests */,
+				124D2CD2E6EE88FD49F45C0A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BC1127951D2B403BD581E4FF /* Storage */ = {
+			isa = PBXGroup;
+			children = (
+				757A94E5878407D97F664DBA /* ProfileStore.swift */,
+			);
+			path = Storage;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1372831291B47DC29F3601FB /* PodpalSync */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5AD8ECEBD1AA8EAE4D4510D2 /* Build configuration list for PBXNativeTarget "PodpalSync" */;
+			buildPhases = (
+				0C9B143BD2010FD580BC4FFE /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PodpalSync;
+			packageProductDependencies = (
+			);
+			productName = PodpalSync;
+			productReference = 141365FD7216EF02FA626A10 /* PodpalSync.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4DB86200D371668571E66ED9 /* PodpalSyncTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B83153392C04E8ABC42D01E8 /* Build configuration list for PBXNativeTarget "PodpalSyncTests" */;
+			buildPhases = (
+				660EA108E0A21AE32754786D /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				270EC3BF9AEF302731FFC8B2 /* PBXTargetDependency */,
+			);
+			name = PodpalSyncTests;
+			packageProductDependencies = (
+			);
+			productName = PodpalSyncTests;
+			productReference = EF354DEFC3EE881150ABF536 /* PodpalSyncTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E64515BB56DF9727D61C0A7C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					1372831291B47DC29F3601FB = {
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 84E776BA5BFAEFBD842C50B2 /* Build configuration list for PBXProject "PodpalSync" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 8C73A89958EDFEFEE128CDA4;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1372831291B47DC29F3601FB /* PodpalSync */,
+				4DB86200D371668571E66ED9 /* PodpalSyncTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0C9B143BD2010FD580BC4FFE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				036705BB969CAE38A87420A0 /* ArtExtractor.swift in Sources */,
+				1AA64ECAAF7580C158DE6BC3 /* IPodDetector.swift in Sources */,
+				B135E1535B264572702FF995 /* IPodProfile.swift in Sources */,
+				80793487F4DF21580ECECA8A /* MenuBarView.swift in Sources */,
+				54D4957D470A2A314C9E0452 /* PodpalSyncApp.swift in Sources */,
+				78856E288D7326085E21FA88 /* ProfileEditView.swift in Sources */,
+				D74D9A85779A2E074874FA93 /* ProfileListView.swift in Sources */,
+				A19699B741C5FE64C42C8A5A /* ProfileStore.swift in Sources */,
+				4CE88A0913EF015EE8645721 /* SyncCoordinator.swift in Sources */,
+				A4D0727B7E6DAD804A609DB6 /* SyncEngine.swift in Sources */,
+				AE20845E99E3D0C174C56735 /* SyncResult.swift in Sources */,
+				328FC6B89BBBD29CD6DE314A /* SyncRule.swift in Sources */,
+				A999AA2790F5A9C841CB2589 /* SyncRuleRowView.swift in Sources */,
+				31943776226D640246CF426A /* SyncStatusView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		660EA108E0A21AE32754786D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5FDAB8966647AA426F57F6D7 /* ArtExtractorTests.swift in Sources */,
+				6770A2359BB986EE69D1D78D /* IPodDetectorTests.swift in Sources */,
+				B1C2BBEB59E842E181220D32 /* ProfileStoreTests.swift in Sources */,
+				649A4BFAFD147869BEDADFB7 /* SyncEngineTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		270EC3BF9AEF302731FFC8B2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1372831291B47DC29F3601FB /* PodpalSync */;
+			targetProxy = 4F2F6E9BA9FB11E218C3DC9E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		16630EA33DF45B432293A726 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.podpal.sync.tests;
+				SDKROOT = macosx;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PodpalSync.app/Contents/MacOS/PodpalSync";
+			};
+			name = Release;
+		};
+		31D5FD73BDD7ABDB4E0A187E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = PodpalSync/PodpalSync.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = PodpalSync/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.podpal.sync;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		54477C604574B50C31CDDA43 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = PodpalSync/PodpalSync.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = PodpalSync/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.podpal.sync;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		5B97A7A51DEEC840B6EF33F8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.9;
+			};
+			name = Debug;
+		};
+		5D7C1181817C6F8A9B898919 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.podpal.sync.tests;
+				SDKROOT = macosx;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PodpalSync.app/Contents/MacOS/PodpalSync";
+			};
+			name = Debug;
+		};
+		8EC0A31D9C00D10AF3885D01 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.9;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5AD8ECEBD1AA8EAE4D4510D2 /* Build configuration list for PBXNativeTarget "PodpalSync" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				31D5FD73BDD7ABDB4E0A187E /* Debug */,
+				54477C604574B50C31CDDA43 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		84E776BA5BFAEFBD842C50B2 /* Build configuration list for PBXProject "PodpalSync" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5B97A7A51DEEC840B6EF33F8 /* Debug */,
+				8EC0A31D9C00D10AF3885D01 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		B83153392C04E8ABC42D01E8 /* Build configuration list for PBXNativeTarget "PodpalSyncTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5D7C1181817C6F8A9B898919 /* Debug */,
+				16630EA33DF45B432293A726 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E64515BB56DF9727D61C0A7C /* Project object */;
+}
